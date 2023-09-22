@@ -5,7 +5,7 @@ function App() {
   const [musicStarted, setMusicStarted] = useState(false);  
   const startMusic = async () => {
     if (!musicStarted) {
-      const audio = new Audio("../audio/Flores-Amarillas.mp3");
+      const audio = new Audio("/Flores-Amarillas.mp3");
       await audio.play();
       audio.loop = true;
       setMusicStarted(true);
